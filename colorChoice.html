@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="colorChoice.css">
+    <title>CSS Manipulation</title>
+</head>
+<body>
+    <div class="paragraph">
+    <p>
+      The Document Object Model, or DOM, that defines the structure of an HTML
+      document has inside of it a style object. To access the style object, you simply need
+      to access the tag, via its id, like in previous exercises. You can then access the style
+      object of that tag.
+    </p>
+    </div>
+    <p>Change color below</p>
+
+    <p>Background color: </p>
+    <p><li>
+        <label for="bgRed"> Red value:</label>
+        <input type="text" placeholder="(0-255)" id="bgRed">
+    </li></p>
+    <p><li>
+        <label for="bgGreen"> Green value:</label>
+        <input type="text" placeholder="(0-255)" id="bgGreen">
+    </li></p>
+    <p><li>
+        <label for="bgBlue"> Blue value:</label>
+        <input type="text" placeholder="(0-255)" id="bgBlue">
+    </li></p>
+
+    <p>Border: </p>
+    <p><li>
+        <label for="bdRed"> Red value:</label>
+        <input type="text" placeholder="(0-255)" id="bdRed">
+    </li></p>
+    <p><li>
+        <label for="bdGreen"> Green value:</label>
+        <input type="text" placeholder="(0-255)" id="bdGreen">
+    </li></p>
+    <p><li>
+        <label for="bdBlue"> Blue value:</label>
+        <input type="text" placeholder="(0-255)" id="bdBlue">
+    </li></p>
+    <p><li>
+        <label for="w"> Width:</label>
+        <input type="text" id="w">
+    </li></p>
+
+    <button id="button">Change</button>
+    <script src="colorChoice.js"></script>
+</body>
+</html>

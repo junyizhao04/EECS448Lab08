@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Bunch of Sushi</title>
+</head>
+<body>
+    <h2>These are a bunch of sushi that I felt really tasty for BSO here. Shot on Apr 16, 2022.</h2>
+    <div class="slides">
+
+        <div class="pictures">
+            <img src="sushi/nigiri1.jpg" width="50%" height="50%" class="slideshow">
+        </div>
+
+        <button class="button" onclick = "previous()">Previous</button>
+        <button class="button" onclick = "next()">Next</button>
+    </div>
+
+    <script type="text/javascript">
+      var slider = document.querySelector('.slideshow');
+      var pictures = ['nigiri1.jpg', 'nigiri2.jpg', 'nigiri3.jpg', 'nigiri4.jpg', 'nigiri5.jpg', 'nigiri6.jpg', 'uni.jpg'];
+      var i = 0;
+
+      function previous()
+      {
+        i --;
+        if (i < 0) i = (i + pictures.length) % pictures.length; // this looks way more eloquent and can deal with other number of images
+        return set();
+      }
+
+      function next()
+      {
+        i ++;
+        i = i % pictures.length;
+        return set();
+      }
+
+      function set()
+      {
+        return slider.setAttribute('src', "sushi/" + pictures[i]);
+      }
+    </script>
+</body>
+</html>
